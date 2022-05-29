@@ -6,6 +6,7 @@ module.exports = {
     './pages/**/*.vue',
     './plugins/**/*.{js,ts}',
     './utils/**/*.{js,ts}',
+    // './nuxt.config.{js,ts}',
   ],
   theme: {
     extend: {},

@@ -22,7 +22,7 @@ setInterval(() => (time.value = getTime()), 30 * 1000)
     >
       <span class="text-xs">{{ time }}</span>
     </div>
-    <div class="w-40 rounded-b-3xl bg-black"></div>
+    <div class="w-36 rounded-b-3xl bg-black"></div>
     <div class="mr-6 mt-1 flex flex-1 justify-end gap-2" :class="colorClasses">
       <ChartBarIcon class="h-4 w-4" />
       <WifiIcon class="h-4 w-4" />
