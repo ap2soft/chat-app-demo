@@ -3,14 +3,14 @@ import { ChatIcon } from '@heroicons/vue/outline'
 </script>
 
 <template>
-  <div>
+  <section class="px-4 pt-10 pb-4">
     <img
       src="../assets/images/wallpaper.jpg"
       alt="Wallpaper"
       class="absolute inset-0 h-full w-full object-cover"
     />
     <div
-      class="absolute inset-x-5 bottom-5 flex justify-between gap-4 rounded-3xl bg-white/30 p-3 backdrop-blur-sm"
+      class="absolute inset-x-2 bottom-2 flex justify-between gap-4 rounded-3xl bg-white/30 p-3 backdrop-blur-sm"
     >
       <NuxtLink
         to="chat-list"
@@ -19,5 +19,5 @@ import { ChatIcon } from '@heroicons/vue/outline'
         <ChatIcon class="h-10 w-10" />
       </NuxtLink>
     </div>
-  </div>
+  </section>
 </template>
