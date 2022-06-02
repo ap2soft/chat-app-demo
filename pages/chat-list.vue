@@ -3,6 +3,8 @@ import { getChatList } from '~~/utils/chat-list-manager'
 import ChatListHeader from '~~/components/chat-list/ChatListHeader'
 import Chat from '~~/components/chat-list/Chat'
 
+useHead({ title: 'Messages' })
+
 const search = ref('')
 
 const chats = ref(getChatList())

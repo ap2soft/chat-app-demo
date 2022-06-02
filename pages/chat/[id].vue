@@ -2,6 +2,8 @@
 import ChatHeader from '~~/components/chat/ChatHeader'
 import { getChat } from '~~/utils/chat-list-manager'
 
+useHead({ title: 'Chat' })
+
 const route = useRoute()
 const chat = ref(getChat(route.params.id))
 </script>

@@ -1,5 +1,7 @@
 <script setup>
 import { ChatIcon } from '@heroicons/vue/outline'
+
+useHead({ title: 'Home' })
 </script>
 
 <template>
