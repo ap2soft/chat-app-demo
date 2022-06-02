@@ -12,7 +12,7 @@ defineProps({
 </script>
 
 <template>
-  <header class="px-4 pt-6 shadow-md">
+  <header class="bg-gray-100 px-4 pt-6 shadow-md">
     <div class="flex items-center gap-2 py-6">
       <NuxtLink to="/chat-list" class="text-gray-400">
         <ChevronLeftIcon class="h-5 w-5" />

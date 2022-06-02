@@ -22,7 +22,6 @@ const filteredChats = computed(() => {
   )
 })
 
-const router = useRouter()
 const openChat = (userId) =>
   navigateTo({
     path: `/chat/${userId}`,
@@ -30,18 +29,17 @@ const openChat = (userId) =>
 </script>
 
 <template>
-  <section>
-    <ChatListHeader v-model:search.sync="search" />
-    <main
-      class="flex flex-grow flex-col overflow-y-auto bg-white px-4 text-gray-900"
-    >
-      <h1 class="py-4 text-2xl font-bold text-gray-800">Messages</h1>
-      <div class="flex-grow overflow-y-auto">
+  <section class="flex h-full flex-col">
+    <ChatListHeader v-model:search.sync="search" class="flex-shrink-0" />
+    <main class="flex flex-col overflow-y-auto bg-white">
+      <h1 class="py-4 px-4 text-2xl font-bold text-gray-800">Messages</h1>
+      <div>
         <Chat
           v-for="chat in filteredChats"
           :key="chat.id"
           :chat="chat"
           @chat-selected="openChat(chat.id)"
+          class="px-4"
         />
       </div>
     </main>
