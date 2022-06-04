@@ -22,9 +22,9 @@ const filteredChats = computed(() => {
   )
 })
 
-const openChat = (userId) =>
+const openChat = (chatId) =>
   navigateTo({
-    path: `/chat/${userId}`,
+    path: `/chat/${chatId}`,
   })
 </script>
 

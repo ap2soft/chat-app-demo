@@ -7,10 +7,10 @@ const emit = defineEmits(['userClicked', 'chatSelected'])
 
 <template>
   <div class="flex cursor-pointer gap-4 py-4" @click="emit('chatSelected')">
-    <Avatar :user="chat" />
+    <Avatar :user="chat.user" />
     <div class="w-full overflow-hidden">
       <h3 class="text-sm font-bold text-gray-800">
-        {{ chat.firstName }} {{ chat.lastName }}
+        {{ chat.user.firstName }} {{ chat.user.lastName }}
       </h3>
       <div class="truncate text-xs text-gray-500">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio corrupti

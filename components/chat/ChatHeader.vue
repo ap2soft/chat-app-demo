@@ -1,5 +1,4 @@
 <script setup>
-// import { User } from '~~/utils/types'
 import { ChevronLeftIcon } from '@heroicons/vue/outline'
 import Avatar from '~~/components/user/Avatar.vue'
 
@@ -18,9 +17,9 @@ defineProps({
         <ChevronLeftIcon class="h-5 w-5" />
       </NuxtLink>
       <div class="flex items-center gap-4">
-        <Avatar :user="chat" />
+        <Avatar :user="chat.user" />
         <h3 class="font-bold text-gray-800">
-          {{ chat.firstName }} {{ chat.lastName }}
+          {{ chat.user.firstName }} {{ chat.user.lastName }}
         </h3>
       </div>
     </div>

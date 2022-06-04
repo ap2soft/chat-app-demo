@@ -1,7 +1,7 @@
-import users from '~~/assets/data/users.json'
-import { User } from '~~/utils/types'
+import chats from '~~/assets/data/chats.json'
+import { IsChat } from '~~/utils/types'
 
-export const getChatList = (): User[] => users
+export const getChatList = (): IsChat[] => chats
 
-export const getChat = (userId?: string): User =>
-  getChatList().find(({ id }) => id === userId)
+export const getChat = (chatId?: string): IsChat =>
+  getChatList().find(({ id }) => id === chatId)
