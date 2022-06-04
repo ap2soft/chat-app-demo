@@ -1,6 +1,4 @@
-<script setup lang="ts">
-import { User } from '~~/utils/types'
-
+<script setup>
 defineProps({
   user: { type: Object },
 })
