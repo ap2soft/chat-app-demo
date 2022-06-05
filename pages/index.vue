@@ -7,7 +7,7 @@ useHead({ title: 'Home' })
 <template>
   <section class="px-4 pt-10 pb-4">
     <img
-      src="../assets/images/wallpaper.jpg"
+      src="~~/assets/images/wallpaper.jpg"
       alt="Wallpaper"
       class="absolute inset-0 h-full w-full object-cover"
     />
