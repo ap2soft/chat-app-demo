@@ -1,5 +1,4 @@
 <script setup>
-import { nextTick } from 'vue'
 import ChatHeader from '~~/components/chat/ChatHeader'
 import ChatMessage from '~~/components/chat/ChatMessage.vue'
 import ChatFooter from '~~/components/chat/ChatFooter'

@@ -18,6 +18,7 @@ const emit = defineEmits(['send'])
         type="text"
         class="w-full rounded-md border border-fuchsia-200 px-4 py-2 transition hover:border-fuchsia-400 focus:outline-none focus:ring focus:ring-fuchsia-400/30"
         v-model="message"
+        placeholder="Type something..."
       />
       <button
         class="rounded-md text-fuchsia-500 transition hover:text-fuchsia-400 focus:outline-none focus:ring focus:ring-fuchsia-400/30 disabled:cursor-not-allowed disabled:text-fuchsia-100"
